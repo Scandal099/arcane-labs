@@ -26,4 +26,3 @@ jobs:
           publish_dir: ./out
 permissions:
   contents: write
-
