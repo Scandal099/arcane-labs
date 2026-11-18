@@ -5,7 +5,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  cacheComponents: true,
+  // Disable experimental features that conflict with static export
+  experimental: {
+    ppr: false,
+  },
   turbopack: {
     rules: {
       "*.css": {
